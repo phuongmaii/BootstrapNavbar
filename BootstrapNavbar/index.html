@@ -1,0 +1,185 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hero {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #d8f3dc, #ffffff);
+        }
+
+        .hero h1 {
+            color: #2d6a4f;
+            font-size: clamp(30px, 5vw, 48px);
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .btn-custom {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        .btn-custom:hover {
+            background-color: #1b4332;
+            color: white;
+        }
+
+        .info-card {
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        footer {
+            background-color: #1b4332;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyWebsite</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Mở menu điều hướng">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#web-design">Web Design</a></li>
+                            <li><a class="dropdown-item" href="#seo">SEO</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nội dung trang -->
+    <section class="hero">
+        <h1>Welcome to MyWebsite</h1>
+        <p>
+            Khám phá các dịch vụ thiết kế website và giải pháp công nghệ
+            giúp bạn phát triển trên môi trường số.
+        </p>
+        <a href="#about" class="btn-custom">Khám phá ngay</a>
+    </section>
+
+    <!-- Các mục giới thiệu -->
+    <main class="container py-5" id="about">
+        <div class="text-center mb-4">
+            <h2>Our Services</h2>
+            <p class="text-muted">Những dịch vụ chúng tôi cung cấp</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6" id="web-design">
+                <div class="card info-card p-4">
+                    <div class="card-body">
+                        <h3 class="card-title">🎨 Web Design</h3>
+                        <p class="card-text">
+                            Thiết kế giao diện website hiện đại, thân thiện
+                            với người dùng và tương thích nhiều thiết bị.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" id="seo">
+                <div class="card info-card p-4">
+                    <div class="card-body">
+                        <h3 class="card-title">🚀 SEO</h3>
+                        <p class="card-text">
+                            Tối ưu hóa website để cải thiện khả năng hiển thị
+                            và tiếp cận người dùng trên công cụ tìm kiếm.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <p class="mb-0">© 2026 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```
